@@ -27,4 +27,8 @@ get_User_Detail_By_key_And_UserId(user_id,'email')
   console.error(error);
 });
 */
+
+document.getElementById('start_workout_btn_history_empty').addEventListener('click', function () {
+  pass_Single_Variables_Through_URL('../start_workout_page/start_workout_page.html','uid',get_variable_from_URL("uid"));
+});
     

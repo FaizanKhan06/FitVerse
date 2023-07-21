@@ -48,7 +48,6 @@ body{
     font-size: 17px;
     border: none;
     margin: 5px;
-    border: none;
 }
 #signUp{
     background-color: var(--color_gray);
@@ -109,6 +108,7 @@ body{
     margin: 25px 0px 15px 0px;
     border-radius: 10px;
     font-size: 17px;
+    border: none;
 }
 .TC_container{
     text-align: center;

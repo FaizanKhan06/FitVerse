@@ -63,11 +63,17 @@ body{
 .fs13{
     font-size: 13px;
 }
+.fs15{
+    font-size: 15px;
+}
 .fs18{
     font-size: 18px;
 }
 .fs20{
     font-size: 20px;
+}
+.fs22{
+    font-size: 22px;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -85,4 +91,16 @@ body{
 .material-symbols-outlined.isFilled{
     font-variation-settings:
         'FILL' 1
+}
+
+.color_--color_gray{
+    color: var(--color_gray);
+}
+.color_--color_blue{
+    color: var(--color_blue);
+}
+
+
+.center{
+    text-align: center;
 }

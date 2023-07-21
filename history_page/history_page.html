@@ -4,15 +4,31 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     
     <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="history_page.js">
+    <link rel="stylesheet" href="history_page.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
     
     <title>History</title>
 </head>
 <body>
+    <div class="main_container">
 
-    <h1 class="header_h1">History</h1>
+        <div class="header_container_with_icon">
+            <h1 class="header_h1 profile_header_h1">History</h1>
+            <button class="small_icon_btn">Calender</button>
+        </div>
+    
+        <div id="empty_history_container">
+            <div>
+                <h1 class="center fs22" >💀</h1>
+                <h1 class="center fs22" style="margin-top: 10px;">No Workouts Performed</h1>
+                <h1 class="center fs15 color_--color_gray" style="margin: 10px;">Completed Workouts will appear here</h1>
+                <div style="display: flex;justify-content: center;">
+                    <button class="color_--color_blue start_workout_history_page_btn">+ Start Workout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="nav_panel_container">
         <div class="nav_panel_holder">

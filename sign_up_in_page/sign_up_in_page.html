@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    
+    <link rel="stylesheet" href="sign_up_in_style.css">
+    
+    <title>FitVerse.com</title>
+</head>
+<body style="overflow-y: hidden;">
+    
+    <div class="bg_logo_container" id="Test"><img src="../src/images/logo.png" alt="logo"></div>
+    
+    <div class="login_page_btn_container">
+        <button id="signUp" class="login_page_btn">Sign Up</button>
+        <button id="signIn" class="login_page_btn">Sign In</button>
+    </div>
+
+    <!--SignUp-->
+    <div class="signUpIn_container" id="signUp_container">
+        <div class="signUpIn_close_btn" id="SignUpClose"></div>
+        <div class="elements_container">
+            <h2 class="heading">Create An Account</h2>
+            <form onsubmit="handleSignUp(event)" class="form_signUpIn">
+                <input type="text" id="signUp_username" name="username" placeholder="Username" class="signUpIn_input" required><br>
+                <input type="email" id="signUp_email" name="email" placeholder="Email" class="signUpIn_input" required><br>
+                <input type="password" id="signUp_password" name="password" placeholder="Password" class="signUpIn_input" required><br>
+        
+                <input type="submit" value="Sign Up" class="signUpInBtn">
+                <p class="TC_container">By continuing you agree to the terms and Conditions and Privacy Policy</p>
+            </form>
+        </div>
+    </div>
+
+    <!--SignIn-->
+    <div class="signUpIn_container" id="signIn_container">
+        <div class="signUpIn_close_btn" id="SignInClose"></div>
+        <div class="elements_container">
+            <h2 class="heading">Welcome Back!</h2>
+            <form onsubmit="handleSignIn(event)" class="form_signUpIn signIn_small_div">
+                <input type="email" id="signIn_email" name="email" placeholder="Email" class="signUpIn_input" required><br>
+                <input type="password" id="signIn_password" name="password" placeholder="Password" class="signUpIn_input" required><br>
+        
+                <input type="submit" value="Sign In" class="signUpInBtn">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../common.js"></script>
+    <script src="sign_up_in_page.js"></script>
+
+</body>

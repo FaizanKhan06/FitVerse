@@ -1,0 +1,85 @@
+:root{
+    --color_black: #000000;
+    --color_white: #FFFFFF;
+    --color_lightBlack: #121212;
+    --color_gray: #626262;
+    --color_blue: #0047FF;
+
+    --color_nav_panel_not_selected: #616161;
+    --color_nav_panel_selected: #FFFFFF;
+
+    --color_icon_btn_gray: #171717;
+    --color_profile_bg: #3A3A3A;
+}
+.header_container_with_icon{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.profile_header_h1{
+    padding: 0;
+}
+.setting_ruler_icon_container{
+    margin-left: auto;
+}
+.small_icon_btn{
+    color: var(--color_blue);
+    border-radius: 100px;
+    width: 30px;
+    height: 28px;
+    border: none;
+    outline: none;
+    padding: 3px;
+    background-color: var(--color_icon_btn_gray);
+    margin: 3px;
+}
+
+.profile_name_display_container{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.image_name_workout_container{
+    display: flex;
+    gap: 9px;
+}
+.profile_image_container{
+    width: fit-content;
+    padding: 8px;
+    aspect-ratio: 1/1;
+    background-color: var(--color_profile_bg);
+    border-radius: 100px;
+}
+.profile_name_workout_container{
+    display: flex;
+    flex-direction: column;
+}
+#name_display{
+    margin-top: auto;
+}
+#workout_display{
+    color: var(--color_gray);
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.default_left_margin{
+    margin-left: 20px;
+}
+
+.graph_with_heading_container{
+    border: var(--color_gray) solid 1px;
+    margin: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#graph_container{
+    background-color: #1b1b1b;
+    margin: 15px 0px 5px 0px;
+    height: 200px;
+}

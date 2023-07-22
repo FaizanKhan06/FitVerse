@@ -32,6 +32,7 @@ get_User_Detail_By_key_And_UserId(user_id,'username')
     
 
 document.getElementById('chang_name_set_goal_btn').addEventListener('click', function () {
+  update_name(username)
   document.getElementById("profile_expand_change_name_set_goal_container").style.transform = "Scale(1)"
 });
 
@@ -40,13 +41,19 @@ document.getElementById('close_change_name_set_goal_btn').addEventListener('clic
 });
 
 document.getElementById('save_change_name_set_goal_btn').addEventListener('click', function () {
-  var newUsername = document.getElementById('change_name_input').value
-  updateUserField(user_id, "username", newUsername)
-  .catch((error) => {
-    console.error(error);
-  });
-  username = newUsername
-  update_name(username);
+  const newUsername = document.getElementById('change_name_input').value.trim();
+  if (newUsername !== '') {
+    updateUserField(user_id, "username", newUsername)
+    .catch((error) => {
+      console.error(error);
+      create_toast("Error Please Try Again Later","var(--color_icon_btn_gray)","var(--color_white)");
+    });
+    username = newUsername
+    create_toast("Saved","var(--color_icon_btn_gray)","var(--color_white)");
+    update_name(username);
+  }else{
+    create_toast("Enter a valid Name","var(--color_icon_btn_gray)","var(--color_red)");
+  }
 });
 
 function update_name(uname){
@@ -73,3 +80,16 @@ document.getElementById('close_measurement_btn').addEventListener('click', funct
 document.getElementById('log_out_btn').addEventListener('click', function () {
   go_back_to_index();
 });
+
+
+function create_toast(message,background_color,text_color){
+  Toastify({
+    text: message,
+    duration: 2000,
+    className: "info",
+    style: {
+      background: background_color,
+      color: text_color,
+    }
+  }).showToast();
+}

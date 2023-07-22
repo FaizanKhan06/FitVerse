@@ -68,10 +68,6 @@
     margin-bottom: 5px;
 }
 
-.default_left_margin{
-    margin-left: 20px;
-}
-
 .graph_with_heading_container{
     border: var(--color_gray) solid 1px;
     margin: 20px;

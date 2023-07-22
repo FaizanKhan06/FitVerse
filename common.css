@@ -5,6 +5,7 @@
     --color_lightBlack: #121212;
     --color_gray: #626262;
     --color_blue: #0047FF;
+    --color_light_black: #242424;
 
     --color_nav_panel_not_selected: #616161;
     --color_nav_panel_selected: #FFFFFF;
@@ -23,7 +24,7 @@ body{
 .nav_panel_container{
     width: 100vw;
     position: fixed;
-    background-color: #242424;
+    background-color: var(--color_light_black);
     bottom: 0;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
@@ -103,4 +104,8 @@ body{
 
 .center{
     text-align: center;
+}
+
+input:focus,textarea:focus{
+    outline: none;
 }

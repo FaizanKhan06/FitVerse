@@ -15,8 +15,8 @@
     <div class="header_container_with_icon">
         <h1 class="header_h1 profile_header_h1">Profile</h1>
         <div class="setting_ruler_icon_container">
-            <button class="small_icon_btn"><span class="material-symbols-outlined ruler_icon is20">settings</span></button>
-            <button class="small_icon_btn"><span class="material-symbols-outlined ruler_icon is20">straighten</span></button>
+            <button class="small_icon_btn" id="settings_btn"><span class="material-symbols-outlined ruler_icon is20">settings</span></button>
+            <button class="small_icon_btn" id="measurment_btn"><span class="material-symbols-outlined ruler_icon is20">straighten</span></button>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
                 <h2 id="workout_display" class="fs13">9999 workouts</h2>
             </div>
         </div>
-        <button class="small_icon_btn"  style="margin-left: auto;"><span class="material-symbols-outlined is20">navigate_next</span></button>
+        <button class="small_icon_btn" id="chang_name_set_goal_btn"  style="margin-left: auto;"><span class="material-symbols-outlined is20">navigate_next</span></button>
     </div>
 
     <h2 class="default_left_margin fs18">Dashboard</h2>
@@ -61,6 +61,57 @@
                     <div class="nav_button_icon"><span class="material-symbols-outlined">person</span></div>
                     <p class="nav_button_text">Profile</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile_expand_change_name_set_goal_container" class="tiny_btn_click_expand_dialogue_box">
+        <div class="tiny_btn_clicked_expand_inside_container">
+            <div class="close_save_btn_name_goal">
+                <button class="small_icon_btn" id="close_change_name_set_goal_btn"><span class="material-symbols-outlined ruler_icon is20">close</span></button>
+                <button class="small_icon_btn with_out_icon" id="save_change_name_set_goal_btn">Save</button>
+            </div>
+            <div class="input_holder">
+                <input type="text" placeholder="Name" id="change_name_input">
+                <textarea type="text" placeholder="Set Goal(Optional)" id="set_goal_input" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile_expand_setting_container" class="tiny_btn_click_expand_dialogue_box">
+        <div class="tiny_btn_clicked_expand_inside_container">
+            <div class="close_save_btn_name_goal">
+                <button class="small_icon_btn" id="close_settings_btn"><span class="material-symbols-outlined ruler_icon is20">close</span></button>
+            </div>
+            <div class="all_settings_panel">
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Setting</h1><span class="material-symbols-outlined is20 setting_icon">navigate_next</span></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="profile_expand_measurement_container" class="tiny_btn_click_expand_dialogue_box">
+        <div class="tiny_btn_clicked_expand_inside_container">
+            
+            <div class="close_save_btn_name_goal">
+                <button class="small_icon_btn" id="close_measurement_btn"><span class="material-symbols-outlined ruler_icon is20">close</span></button>
+                <button class="small_icon_btn with_out_icon" id="save_measurement_btn">Save</button>
+            </div>
+            <div class="all_settings_panel">
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Weight</h1><div class="measurement_value_units"><input type="number" class="input_measurement" maxlength="3"><h1 class="measuremnt_units fs18">kg</h1></div></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Body Fat</h1><div class="measurement_value_units"><input type="number" class="input_measurement" maxlength="3"><h1 class="measuremnt_units fs18">%</h1></div></div>
+                <div class="setting_inside_btn"><h1 class="setting_name fs18">Caloric Intake</h1><div class="measurement_value_units"><input type="number" class="input_measurement" maxlength="3"><h1 class="measuremnt_units fs18">kcal</h1></div></div>
             </div>
         </div>
     </div>

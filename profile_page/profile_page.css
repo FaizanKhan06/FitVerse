@@ -4,6 +4,7 @@
     --color_lightBlack: #121212;
     --color_gray: #626262;
     --color_blue: #0047FF;
+    --color_light_black: #242424;
 
     --color_nav_panel_not_selected: #616161;
     --color_nav_panel_selected: #FFFFFF;
@@ -77,9 +78,86 @@
     overflow: hidden;
     border-radius: 10px;
 }
-
 #graph_container{
     background-color: #1b1b1b;
     margin: 15px 0px 5px 0px;
     height: 200px;
+}
+
+.tiny_btn_click_expand_dialogue_box{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    background-color: #00000094;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform .4s ease;
+}
+.tiny_btn_clicked_expand_inside_container{
+    width: 90%;
+    height: 90%;
+    background-color: var(--color_light_black);
+    border-radius: 10px;
+}
+.close_save_btn_name_goal{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.with_out_icon{
+    margin-left: auto;
+    margin-right: 10px;
+    width: fit-content;
+    padding: 5px 8px;
+}
+.input_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+input,textarea{
+    width: 100%;
+    background-color: var(--color_icon_btn_gray);
+    border: none;
+    color: white;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 6px;
+    resize: none;
+}
+
+.all_settings_panel{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 90%;
+}
+.setting_inside_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 18px;
+}
+.setting_icon{
+    margin-left: auto;
+    margin-right: 36px;
+}
+
+.measurement_value_units{
+    margin-left: auto;
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.input_measurement{
+    text-align: right;
 }

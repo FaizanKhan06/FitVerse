@@ -76,7 +76,7 @@ function get_User_Detail_By_key_And_UserId(userId,detail_key) {
 }
 
 function checkIfUserIdExists(userId) {
-  const databaseRef = firebase.database().ref('Users').child(userId);
+  const databaseRef = user_db.child(userId);
 
   return databaseRef
     .once('value')
@@ -94,6 +94,19 @@ function go_back_to_index(){
   window.location.href = "../index.html";
 }
 
+function updateUserField(userId, fieldName, newValue) {
+  const databaseRef = user_db.child(userId);
+
+  return databaseRef
+    .update({ [fieldName]: newValue })
+    .then(() => {
+      console.log(`${fieldName} updated successfully!`);
+    })
+    .catch((error) => {
+      console.error(`Error updating ${fieldName}:`, error.message);
+      throw error;
+    });
+}
 
 /*
 function addNewObjectToUserData(userId, newObjectData) {

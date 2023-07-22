@@ -69,3 +69,7 @@ document.getElementById('measurment_btn').addEventListener('click', function () 
 document.getElementById('close_measurement_btn').addEventListener('click', function () {
   document.getElementById("profile_expand_measurement_container").style.transform = "Scale(0)"
 });
+
+document.getElementById('log_out_btn').addEventListener('click', function () {
+  go_back_to_index();
+});

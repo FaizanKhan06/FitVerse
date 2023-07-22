@@ -11,6 +11,7 @@
 
     --color_icon_btn_gray: #171717;
     --color_profile_bg: #3A3A3A;
+    --color_red: #da0c0c;
 }
 .header_container_with_icon{
     height: fit-content;
@@ -161,4 +162,18 @@ input,textarea{
 
 .input_measurement{
     text-align: right;
+}
+#log_out_btn{
+    border: none;
+    color: var(--color_red);
+    background-color: var(--color_icon_btn_gray);
+    border-radius: 10px;
+    width: 90%;
+    padding: 5px;
+    margin: 18px;
+
+}
+#log_out_btn:focus{
+    border: none;
+    outline: none;
 }
